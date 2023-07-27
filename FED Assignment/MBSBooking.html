@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Low Jun Jie, Ryan"/>
+    <meta name="description" content="Marina Bay Sands"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <title>Marina Bay Sands</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/booking.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@600&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"> <!--Header/Footer-->
+
+    <script src="js/booking.js" defer></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../vue/index.web-components.js" type="module"></script> <!--Header/Footer-->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--AOS-->
+</head>
+
+<body>
+<nav class="navbar navbar-light navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../">Tourism@SG</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav">
+                <a class="nav-link" href="../qin-guan">Resorts World Sentosa</a>
+                <a class="nav-link" href="../farrell">Gardens By the Bay</a>
+                <a class="nav-link" href="#">Marina Bay Sands</a>
+                <a class="nav-link" href="../yun-e">Art Science Museum</a>
+                <a class="nav-link" href="../richard">Wild Wild Wet</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div data-aos="fade-in" class="row heading">
+        <div class="col-md-2">
+            <p class="back">
+                <a href="index.html">Back to MBS Main Page</a>
+            </p>
+        </div>
+
+        <div class="col-md-8 image">
+            <img class="img-fluid" src="images/mbslogo.png"/>
+        </div>
+
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<br/>
+
+<br/>
+
+<div data-aos="zoom-in-up" class="container-fluid">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <form onchange="getDetails()" onsubmit="submitForm(); return false">
+            <h1>Book Your Room</h1>
+
+            <section>
+                <fieldset>
+                    <legend>Pricing Details</legend>
+                    <div class="table-responsive">
+                        <table>
+
+                            <tr>
+                                <th class="roomHead"></th>
+                                <th class="roomHead" colspan="2">
+                                    Room Type (Main Price)
+                                </th>
+                                <th class="roomHead" colspan="4">
+                                    Room View (Additional Price)
+                                </th>
+                                <th class="roomHead" colspan="5">
+                                    Room Beds (Additional Price)
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th class="roomHead">Name</th>
+                                <th>Deluxe</th>
+                                <th>Premier</th>
+                                <th>Lower Floor</th>
+                                <th>City View</th>
+                                <th>Garden View</th>
+                                <th>Harbour View</th>
+                                <th>Single Bed</th>
+                                <th>Twin Beds</th>
+                                <th>Full-Sized/Double Bed</th>
+                                <th>Queen-Sized Bed</th>
+                                <th>King-Sized Bed</th>
+                            </tr>
+
+                            <tr>
+                                <th class="roomHead">Prices ($/night)</th>
+                                <td>$400</td>
+                                <td>$450</td>
+                                <td>No Charge</td>
+                                <td>No Charge</td>
+                                <td>$30</td>
+                                <td>$30</td>
+                                <td>$30</td>
+                                <td>$55</td>
+                                <td>$55</td>
+                                <td>$70</td>
+                                <td>$85</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </fieldset>
+            </section>
+            <br/>
+
+            <section>
+                <fieldset id="roomField" onchange="getDetails()">
+                    <legend>Room Details</legend>
+
+                    <label for="roomType">Select Your Room Type</label>
+                    <select name="roomType" id="roomType">
+                        <option value="Deluxe">Deluxe</option>
+                        <option value="Premier">Premier</option>
+                    </select>
+
+
+                    <br/><br/>
+
+                    <label for="roomView">Select Your View</label>
+                    <select name="roomView" id="roomView">
+                        <option value="Lower Floor">Lower Floor</option>
+                        <option value="City">City View</option>
+                        <option value="Garden">Garden View</option>
+                        <option value="Harbour">Harbour View</option>
+                    </select>
+
+                    <br/><br/>
+
+                    <label for="roomBed">Select Your Beds</label>
+                    <select name="roomBed" id="roomBed">
+                        <option value="Single">Single Bed</option>
+                        <option value="Twin">Twin Beds</option>
+                        <option value="Double">Full-Sized/Double Bed</option>
+                        <option value="Queen">Queen-Sized Bed</option>
+                        <option value="King">King-Sized Bed</option>
+                    </select>
+
+                    <br/><br/>
+
+                    <label for="startDate">Check-In Date (Up to 1 Year in Advance)</label>
+                    <input type="date" id="startDate" name="startDate" required/>
+
+                    <br/><br/>
+
+                    <label for="nights">Nights Staying (Up to 6 Nights)</label>
+                    <input type="number" id="nights" min="1" max="6" value="1" required/>
+
+                </fieldset>
+            </section>
+
+            <br/>
+
+            <section>
+                <fieldset id="customerField">
+                    <legend>Customer Details</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your Name" title="e.g. John" pattern="[A-Za-z]+"
+                           required/>
+
+                    <br/><br/>
+
+                    <label for="contact">&#9742; Contact Number:</label>
+                    <input type="text" id="contact" placeholder="Enter your Contact Number" title="e.g. 98765432"
+                           pattern="[0-9]+" size="30" required/>
+
+                    <br/><br/>
+
+                    <label for="email">&#9993; Email:</label>
+                    <input type="email" id="email" placeholder="Enter your Email Address"
+                           title="e.g. zhongxina@gmail.com" size="30" required/>
+
+
+                </fieldset>
+            </section>
+
+            <br/>
+
+            <section>
+                <fieldset>
+                    <legend>Booking Details</legend>
+
+                    <label id="typeDetails" class="bookingDetails"></label><br/>
+                    <label id="viewDetails" class="bookingDetails"></label><br/>
+                    <label id="priceDetails" class="bookingDetails"></label><br/>
+                    <label id="noBooking" class="noBooking">No bookings have been made yet.</label><br/>
+                    <label id="dateDetails" class="bookingDetails"></label><br/>
+                    <label id="customerDetails" class="bookingDetails"></label>
+                </fieldset>
+            </section>
+
+            <br/>
+
+            <input type="submit" id="submitButton"/>
+            <input type="reset" onclick="resetForm()"/>
+
+        </form>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<br/>
+<v-footer></v-footer>
+</body>
+</html>
+
+<script>
+    AOS.init();
+</script> <!--AOS-->

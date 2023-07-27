@@ -1,0 +1,176 @@
+﻿div {
+    margin: auto;
+    text-align: center;
+}
+
+.heading {
+    padding: 10px;
+    border-bottom: thin dashed grey;
+}
+
+.col-md-8 img{
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    padding: 10px;
+    background-color: white;
+    border: thin solid black;
+    font-family: 'Catamaran', sans-serif;
+}
+
+h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    margin: auto;
+}
+
+.headingtext {
+    padding: 20px;
+    background-color: navajowhite;
+    border-bottom: thin dashed grey;
+}
+
+
+.row.carousel {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.carousel-control-prev {
+    background-color: lightgray;
+}
+
+.carousel-control-next {
+    background-color: lightgray;
+}
+
+.col-md-6 img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.carousel-inner img {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+p.back {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 130%;
+    margin: auto;
+}
+
+
+.content {
+    font-size: 170%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.link {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.row.features {
+    background-color: navajowhite;
+    padding: 20px;
+    border-top: thin dashed grey;
+    border-bottom: thin dashed grey;
+}
+
+.col-md-6.features {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.row.shop {
+    padding-bottom: 20px;
+    padding: 20px;
+}
+
+.col-md-6.shop {
+    text-align: left;
+    margin: auto;
+}
+
+.col-md-6.shop-things {
+    text-align: right;
+    margin: auto;
+    padding-right: 30px;
+
+}
+
+
+.col-md-6.features cite, .col-md-6.shop cite, .col-md-6.shop cite a {
+    display: block;
+    word-wrap: break-word; /*Breaks overflowing text down and places it below*/
+    text-align: center;
+}
+
+
+.content a {
+    display: block; /*Breaks overflowing text down and places it below*/
+    word-wrap: break-word;
+}
+
+.row.gardens {
+    border-top: thin dashed gray;
+    padding: 20px;
+    background-color: navajowhite;
+}
+
+.col-md-6.gardens {
+    text-align: right;
+    padding: 0;
+}
+
+.col-md-6.gardens-things {
+    text-align: left;
+    padding-left: 30px;
+    margin: auto;
+}
+
+.col-md-6.gardens cite {
+    display: block;
+    text-align: center;
+}
+
+nav {
+    background-color: #E2E8F0;
+}
+
+nav > .container-fluid > a {
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+nav #navbar a {
+    font-family: IBM Plex Sans;
+    text-align: left;
+}
+
+nav #navbar a:hover {
+    text-decoration: underline !important;
+}

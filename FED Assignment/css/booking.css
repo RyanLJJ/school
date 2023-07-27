@@ -1,0 +1,133 @@
+﻿div {
+    margin: auto;
+}
+
+body {
+    background-color: navajowhite;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+}
+
+p.back {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 130%;
+    margin: auto;
+}
+
+.heading {
+    padding: 10px;
+    border-bottom: thin dashed grey;
+    background-color: white;
+}
+
+.img-fluid {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/*Form details*/
+
+form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: thin dashed black;
+    border-radius: 30px;
+    margin: auto;
+    padding: 20px;
+    background-color: mintcream;
+
+}
+
+form h1 {
+    padding: 20px;
+}
+
+fieldset {
+    border: thin solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+legend {
+    font-size: 150%;
+    font-weight: bold;
+    width: auto;
+}
+
+footer {
+    padding: 10px;
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    width: 250px;
+}
+
+table {
+    border: thin solid black;
+}
+
+th {
+    text-align: center;
+    padding: 5px;
+    background-color: mintcream;
+}
+
+th.roomHead {
+    font-size: large;
+    background-color: mistyrose;
+}
+
+td {
+    text-align: center;
+    min-width: 80px;
+    background-color: white;
+    padding: 10px;
+}
+
+tr, th, td {
+    border: thin solid black;
+}
+
+.bookingDetails {
+    color: dodgerblue;
+    font-size: 130%;
+    display: inline;
+    font-weight: bold;
+
+}
+
+.noBooking {
+    color: red;
+    font-size: 130%;
+    display: inline;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #E2E8F0;
+}
+
+nav > .container-fluid > a {
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+nav #navbar a {
+    font-family: IBM Plex Sans;
+}
+
+nav #navbar a:hover {
+    text-decoration: underline !important;
+}
